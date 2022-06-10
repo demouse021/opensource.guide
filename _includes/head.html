@@ -20,4 +20,10 @@
       {% endif %}
     {% endfor %}
   {% endif %}
+   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ default_url }}" />
+      {% else %}
+      <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </head>
